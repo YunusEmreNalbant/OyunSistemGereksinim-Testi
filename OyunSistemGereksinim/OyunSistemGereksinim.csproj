@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D01D7B4-C676-465C-BAE4-BB1EBA0B0DAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OyunSistemGereksinim</RootNamespace>
+    <AssemblyName>OyunSistemGereksinim</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnasayfa.Designer.cs">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OyunSistemGereksinimDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OyunSistemGereksinimDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="FrmAnasayfa.resx">
+      <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="OyunSistemGereksinimDataSet.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet1.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet1.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet2.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet2.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet3.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet3.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet4.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet4.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet5.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet5.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet6.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet6.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet7.xsc">
+      <DependentUpon>OyunSistemGereksinimDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OyunSistemGereksinimDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OyunSistemGereksinimDataSet7.xss">
+      <DependentUpon>OyunSistemGereksinimDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
